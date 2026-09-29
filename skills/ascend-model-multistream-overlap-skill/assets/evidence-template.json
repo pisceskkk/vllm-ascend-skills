@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "run_id": null,
+  "status": "unmeasured",
+  "scope": {"target_cases": [], "objective": null, "metric": null, "minimum_gain_pct": null, "regression_budget_pct": null},
+  "states": {
+    "baseline": {"code_ref": null, "dirty_diff_sha256": null, "code_map": null},
+    "candidate": {"code_ref": null, "dirty_diff_sha256": null, "code_map": null}
+  },
+  "environment": {"model": null, "tokenizer": null, "hardware": null, "runtime_versions": {}, "native_operator_version": null, "topology": null, "config_sha256": null, "input_sha256": null},
+  "capture": {"target_window_seconds": null, "actual_window_seconds": null, "clock_domain": null, "expected_ranks": [], "observed_ranks": [], "request_success": null, "device_data_complete": null, "start_command": null, "stop_command": null},
+  "artifacts": [],
+  "evidence": [],
+  "gates": {"source_mapping": "unmeasured", "correctness": "unmeasured", "overlap_behavior": "unmeasured", "performance": "unmeasured"},
+  "iterations": [],
+  "uncovered_cases": [],
+  "decision": "unresolved"
+}

@@ -1,0 +1,10 @@
+interaction_id,feature_a,feature_b,feature_c,affected_contract,selection,support_evidence,cases,correctness_evidence,behavior_evidence,performance_evidence,status
+graph-quantization,graph,quantization,,dtype-layout-capture,candidate,,,,,,unmeasured
+graph-dynamic-batch,graph,dynamic-batch,,padding-buffer-reuse,candidate,,,,,,unmeasured
+partition-cache,context-partition,cache-update,,local-global-ownership,candidate,,,,,,unmeasured
+tensor-expert,tensor-parallel,expert-parallel,,collective-order,candidate,,,,,,unmeasured
+speculative-graph,speculative-execution,graph,,branch-buffer-lifetime,candidate,,,,,,unmeasured
+async-cache,async-scheduling,prefix-cache,,producer-consumer-visibility,candidate,,,,,,unmeasured
+chunk-communication,chunked-prefill,communication-overlap,,tail-block-order,candidate,,,,,,unmeasured
+existing-overlap,multistream,existing-overlap,,stream-event-resource-sharing,candidate,,,,,,unmeasured
+deployment-combination,graph,partitioning,speculative-execution,actual-supported-deployment,candidate,,,,,,unmeasured

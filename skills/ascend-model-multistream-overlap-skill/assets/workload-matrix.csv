@@ -1,0 +1,8 @@
+case_id,phase,input_length,output_length,kv_length,arrival_mode,client_load,actual_device_batch,total_tokens,padding,cache_state,chunking,graph_bucket,rank_role,business_weight,selection,reason,evidence,status
+prefill-short,prefill,short,,,fixed-rate,,,,,warm,,,,,candidate,dispatch-overhead,,unmeasured
+prefill-long,prefill,long,,,saturated,,,,,warm,on,,,,candidate,compute-and-chunk-boundary,,unmeasured
+decode-small,decode,,long,short,saturated,low,,,,warm,,,,,candidate,launch-and-event-overhead,,unmeasured
+decode-large,decode,,long,long,saturated,high,,,,warm,,,,,candidate,resource-and-bandwidth-pressure,,unmeasured
+decode-boundary,decode,,,long,fixed-rate,,,,,warm,,capture-boundary,,,candidate,padding-and-graph-transition,,unmeasured
+mixed,mixed,mixed,mixed,mixed,fixed-rate,,,,,warm,on,,,,candidate,prefill-decode-interference,,unmeasured
+rank-tail,mixed,,,,fixed-rate,,,,,warm,,,partial-or-empty,,candidate,rank-branch-and-buffer-lifetime,,unmeasured

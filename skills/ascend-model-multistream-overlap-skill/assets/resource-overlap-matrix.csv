@@ -1,0 +1,9 @@
+resource_a,resource_b,initial_assessment,shared_bottlenecks,required_evidence,rejection_signal
+aic,aiv,candidate,HBM-cache-mixed-kernels,actual-task-types-and-bandwidth,kernel-inflation-or-step-regression
+aic,aic,shared-resource-risk,core-occupancy-and-memory,occupancy-headroom-and-paired-timing,critical-path-expansion
+aiv,aiv,shared-resource-risk,core-occupancy-and-memory,occupancy-headroom-and-paired-timing,vector-kernel-inflation
+mixed,aic,inspect-substages,AIC-AIV-HBM,substage-resource-counters,partner-starvation
+mixed,aiv,inspect-substages,AIC-AIV-HBM,substage-resource-counters,vector-contention
+compute,communication,candidate,AIV-HBM-network,communication-implementation-and-dependencies,collective-delay-or-order-violation
+compute,memory,candidate,HBM-copy-engine,copy-path-and-buffer-lifetime,bandwidth-saturation
+unknown,any,unresolved,unknown,task-type-and-runtime-evidence,unsupported-resource-claim

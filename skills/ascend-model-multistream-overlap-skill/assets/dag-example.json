@@ -1,0 +1,15 @@
+{
+  "context": {"synthetic": true, "graph_kind": "proposed_execution", "case_id": "example", "note": "Illustrative durations; no hardware performance claim."},
+  "nodes": [
+    {"id": "convert", "label": "Input conversion", "duration_us": "12", "resources": ["aiv"], "code_sites": ["convert-site"], "evidence": ["synthetic:event-1"]},
+    {"id": "project", "label": "Matrix projection", "duration_us": "30", "resources": ["aic"], "code_sites": ["project-site"], "evidence": ["synthetic:event-2"]},
+    {"id": "transform", "label": "Independent vector transform", "duration_us": "18", "resources": ["aiv"], "code_sites": ["transform-site"], "evidence": ["synthetic:event-3"]},
+    {"id": "consume", "label": "Join and consume", "duration_us": "5", "resources": ["aiv"], "code_sites": ["consume-site"], "evidence": ["synthetic:event-4"]}
+  ],
+  "edges": [
+    {"from": "convert", "to": "project", "kind": "data", "evidence": ["synthetic:converted tensor"]},
+    {"from": "convert", "to": "transform", "kind": "event", "evidence": ["synthetic:delay transform until conversion finishes"]},
+    {"from": "project", "to": "consume", "kind": "data", "evidence": ["synthetic:projected tensor"]},
+    {"from": "transform", "to": "consume", "kind": "event", "evidence": ["synthetic:wait before reading transformed tensor"]}
+  ]
+}

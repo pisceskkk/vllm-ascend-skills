@@ -1,0 +1,3 @@
+# Divergence localization logic
+
+Start with a passing eager case and the smallest graph-only failure. Freeze input, seed, model, topology and output comparison tolerance. Capture corresponding intermediate tensors outside the captured graph; record stage, shape, dtype and a stable identifier for each snapshot. Compare eager and graph snapshots in execution order, identify the first divergent stage, then reduce the reproducer around that boundary. Change one variable per experiment and keep the expected and observed outcome. After a fix, rerun both the minimal case and original graph workload and remove instrumentation.

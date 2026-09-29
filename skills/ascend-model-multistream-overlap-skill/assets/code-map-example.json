@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "context": {"synthetic": true, "purpose": "Demonstrate mapping schema; runtime evidence below is synthetic, not a measurement."},
+  "sites": [
+    {"id": "convert-site", "path": "model.py", "function": "Block.forward", "start_line": 4, "end_line": 4, "call_chain": ["Block.forward", "ops.convert", "synthetic_vector_convert"], "tensor_contract": {"inputs": ["x: source dtype/layout"], "outputs": ["converted: projection dtype/layout"], "reads": ["x"], "writes": ["converted"], "aliases": [], "side_effects": []}},
+    {"id": "project-site", "path": "model.py", "function": "Block.forward", "start_line": 5, "end_line": 5, "call_chain": ["Block.forward", "ops.project", "synthetic_matrix_kernel"], "tensor_contract": {"inputs": ["converted"], "outputs": ["projected"], "reads": ["converted", "weight"], "writes": ["projected"], "aliases": [], "side_effects": []}},
+    {"id": "transform-site", "path": "model.py", "function": "Block.forward", "start_line": 6, "end_line": 6, "call_chain": ["Block.forward", "ops.transform", "synthetic_vector_kernel"], "tensor_contract": {"inputs": ["q"], "outputs": ["transformed"], "reads": ["q"], "writes": ["transformed"], "aliases": [], "side_effects": []}},
+    {"id": "consume-site", "path": "model.py", "function": "Block.forward", "start_line": 7, "end_line": 7, "call_chain": ["Block.forward", "ops.consume", "synthetic_consumer"], "tensor_contract": {"inputs": ["projected", "transformed"], "outputs": ["result"], "reads": ["projected", "transformed"], "writes": ["result"], "aliases": [], "side_effects": []}}
+  ],
+  "bindings": [
+    {"operator_id": "convert", "code_sites": ["convert-site"], "status": "verified", "static_evidence": ["synthetic:model.py:4"], "runtime_evidence": ["synthetic:event-1"]},
+    {"operator_id": "project", "code_sites": ["project-site"], "status": "verified", "static_evidence": ["synthetic:model.py:5"], "runtime_evidence": ["synthetic:event-2"]},
+    {"operator_id": "transform", "code_sites": ["transform-site"], "status": "verified", "static_evidence": ["synthetic:model.py:6"], "runtime_evidence": ["synthetic:event-3"]},
+    {"operator_id": "consume", "code_sites": ["consume-site"], "status": "verified", "static_evidence": ["synthetic:model.py:7"], "runtime_evidence": ["synthetic:event-4"]}
+  ]
+}
