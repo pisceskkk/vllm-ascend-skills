@@ -4,6 +4,7 @@ The service controller in a target environment should implement the following st
 
 ```text
 resolve source pair and target
+  -> derive missing launch configuration and topology from current project evidence
   -> validate model path, topology, devices and available port
   -> launch with individually quoted arguments
   -> persist PID and resolved configuration
