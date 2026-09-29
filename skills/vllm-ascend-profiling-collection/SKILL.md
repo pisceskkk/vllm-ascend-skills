@@ -1,9 +1,9 @@
 ---
-name: ascend-profiling-collection
-description: Collect one useful Ascend torch-profiler case with a verified workload window and complete rank outputs.
+name: vllm-ascend-profiling-collection
+description: Collect one vLLM Ascend serving torch-profiler case with a verified workload window and complete rank outputs.
 ---
 
-# Ascend Profiling Collection
+# vLLM Ascend Profiling Collection
 
 Use this skill for the domain task described above. The workflow below is a reference contract; choose execution tools available in the target environment.
 

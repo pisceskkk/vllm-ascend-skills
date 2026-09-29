@@ -16,3 +16,5 @@ AISBench and `aisbench_auto_tools` are external tools. Obtain [AISBench](https:/
 ## Scope
 
 The repository carries the two serving Skills, change and correctness validation, graph/distributed/operator debugging, four Triton Skills, Benchmark and performance regression, profiling collection and analysis, HBM attribution, and multistream overlap. It contains domain reference material and does not assume the original workspace's machine inventory or remote execution state.
+
+Names beginning with `vllm-ascend-` cover workflows tied to vLLM Ascend serving or its codebase. Names beginning with `ascend-` cover NPU operator and profiler analysis methods that can be applied without a vLLM service. Profiling collection and HBM attribution use the `vllm-ascend-` prefix because their workflows rely on a running vLLM service.

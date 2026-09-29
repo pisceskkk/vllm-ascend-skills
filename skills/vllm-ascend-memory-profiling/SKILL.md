@@ -1,9 +1,9 @@
 ---
-name: ascend-memory-profiling
+name: vllm-ascend-memory-profiling
 description: Attribute Ascend HBM use during vLLM serving to weights, KV cache, HCCL, activations and runtime components.
 ---
 
-# Ascend Memory Profiling
+# vLLM Ascend Memory Profiling
 
 Use this skill for the domain task described above. The workflow below is a reference contract; choose execution tools available in the target environment.
 
