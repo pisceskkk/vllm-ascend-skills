@@ -17,6 +17,8 @@ one dimension answers a concrete hypothesis.
 
 ## Result contract
 
+When a failure comes from a serving container, keep the operator's stderr and relevant plog from `~/ascend/log/debug/` as raw evidence. Correlate the plog time window, rank and device with the isolated call before attributing a root cause. Record missing plog as missing evidence rather than inferring its contents.
+
 ```json
 {
   "schema_version": 1,
