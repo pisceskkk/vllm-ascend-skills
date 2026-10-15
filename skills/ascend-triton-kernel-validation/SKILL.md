@@ -16,6 +16,7 @@ Use this skill for the domain task described above. The workflow below is a refe
 
 ## Detailed references
 
+- [Operator playbook](../ascend-triton-workflow/references/ascend-triton-operator-playbook.md): read when handing correctness evidence to development or optimization.
 - [acceptance.md](references/acceptance.md)
 - [behavior.md](references/behavior.md)
 - [case-design.md](references/case-design.md)

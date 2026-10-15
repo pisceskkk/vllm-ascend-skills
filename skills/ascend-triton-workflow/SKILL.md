@@ -16,6 +16,7 @@ Use this skill for the domain task described above. The workflow below is a refe
 
 ## Detailed references
 
+- [Operator playbook](references/ascend-triton-operator-playbook.md): read when choosing stages or reviewing lifecycle transitions and shared evidence requirements.
 - [acceptance.md](references/acceptance.md)
 - [behavior.md](references/behavior.md)
 

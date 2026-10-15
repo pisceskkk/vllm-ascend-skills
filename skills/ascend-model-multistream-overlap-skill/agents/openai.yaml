@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ascend Model Multistream Overlap"
+  short_description: "Profile, design, and validate Ascend stream overlap"
+  default_prompt: "Use $ascend-model-multistream-overlap-skill to optimize stream scheduling with verified operator-to-code mapping, correctness checks, and measured performance."

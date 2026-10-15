@@ -16,6 +16,7 @@ Use this skill for the domain task described above. The workflow below is a refe
 
 ## Detailed references
 
+- [Operator playbook](../ascend-triton-workflow/references/ascend-triton-operator-playbook.md): read when checking the validation prerequisite or coordinating the complete lifecycle.
 - [acceptance.md](references/acceptance.md)
 - [ascend-techniques.md](references/ascend-techniques.md)
 - [behavior.md](references/behavior.md)

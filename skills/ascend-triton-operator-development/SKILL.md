@@ -16,6 +16,7 @@ Use this skill for the domain task described above. The workflow below is a refe
 
 ## Detailed references
 
+- [Operator playbook](../ascend-triton-workflow/references/ascend-triton-operator-playbook.md): read when this development task needs coordination with validation or optimization.
 - [acceptance.md](references/acceptance.md)
 - [architecture-and-codegen.md](references/architecture-and-codegen.md)
 - [behavior.md](references/behavior.md)
